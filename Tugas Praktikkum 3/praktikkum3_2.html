@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+  <h1 style="text-align: center ;">
+   Biodata Mahasiswa
+  </h1>
+  <form method="post">
+    <label for="fname">Nama Lengkap:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="alamat">Alamat Lengkap</label><br>
+    <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea>
+    <br>
+    <label for="sex">Jenis Kelamin:</label><br>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Pria</label><br>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Wanita</label><br>
+    
+    <label for="Pekerjaan">Pekerjaan:</label>
+    <input list="profesi" name="pekerjaan" id="pekerjaan">
+    <datalist id="profesi">
+        <option value="Karyawan Swasta">
+        <option value="PNS/ TNI/ POLRI">
+        <option value="Wirausaha">
+        <option value="Pelajar/ Mahasiswa">
+        <option value="Lainnya">
+    </datalist><br>
+    <label for="fponsel">Nomor HP:</label>
+    <input type="text" id="fponse" name="fponsel"><br>
+    
+    <input type="checkbox" id="agree" name="agree" value="yes" required oninvalid="this.setCustomValidity('Klik di sini untuk melanjutkan')">
+    <label for="agree"> Data yang saya kirim sudah benar</label><br>
+    <input type="submit" value="Kirim">
+    <input type="reset" value="Ulangi">
+  </form>
+</body>
+</html>
